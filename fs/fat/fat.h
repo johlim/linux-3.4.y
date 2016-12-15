@@ -326,6 +326,8 @@ extern int fat_fill_super(struct super_block *sb, void *data, int silent,
 
 extern int fat_flush_inodes(struct super_block *sb, struct inode *i1,
 		            struct inode *i2);
+extern int fat_add_cluster(struct inode *inode);
+
 /* fat/misc.c */
 extern __printf(3, 4) __cold
 void __fat_fs_error(struct super_block *sb, int report, const char *fmt, ...);
