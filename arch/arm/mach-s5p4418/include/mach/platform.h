@@ -67,7 +67,7 @@
  * Get virtual interrupt number: gpio, alive, dma
  */
 #define	PB_PIO_IRQ(nr)		(IRQ_GPIO_START   + nr)
-#define	PB_ALV_IRQ(nr)		(IRQ_ALIVE_START  + PAD_GET_BIT(nr))
+#define	PB_ALV_IRQ(nr)		(IRQ_ALIVE_START  + PAD_GET_BITNO(nr))
 #define	PB_DMA_IRQ(nr)		(IRQ_DMA_START    + nr)
 #define	PB_SYS_IRQ(nr)		(IRQ_SYSCTL_START + nr)
 
